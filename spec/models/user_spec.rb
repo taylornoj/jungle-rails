@@ -30,8 +30,18 @@ RSpec.describe User, type: :model do
       print subject.errors.full_messages
     end
 
-   
+    context 'should not have 2 users with same email' do
+      let! (:user2) { User.create(name: 'user2', email: 'test@TEST.com', password: '12345', password_confirmation: '12345') }
 
+      it { is_expected.to_not be_valid }
+    end
+
+    it 'is not valid without a name' do
+      subject.name = nil
+      expect(subject).to_not be_valid
+      print ".errors.full_messages === "
+      print subject.errors.full_messages
+    end
   end
  
 
