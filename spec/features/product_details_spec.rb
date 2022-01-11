@@ -17,4 +17,14 @@ RSpec.feature "Visitor navigates to details of single product", type: :feature, 
     end
   end
 
+  scenario "User can see all details of selected product" do
+    visit root_path
+    
+    find_link("Details", match: :first).trigger("click")
+    expect(page).to have_css 'section.products-show'
+    save_screenshot 
+    # puts page.html
+
+  end
+
 end
