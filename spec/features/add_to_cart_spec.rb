@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "AddToCarts", type: :feature do
+RSpec.feature "Visitor adds products to cart", type: :feature do
 
   before :each do
     @category = Category.create! name: 'Apparel'
@@ -16,7 +16,7 @@ RSpec.feature "AddToCarts", type: :feature do
     end
   end
 
-  scenario do
+  scenario "User sees cart number increase in the top nav" do
   end
-  
+
 end
