@@ -2,6 +2,44 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+## Approach:
+This is a project from Lighthouse Labs, designed to teach students how to navigate an existing code-base while implementing new features and bug fixes in unfamiliar territory.
+
+## Features Added:
+[ User Authentication ]
+- Login/Register implemented using bcrypt for Rails
+
+[ Inventory ]
+- Sold out badge appears when product reaches 0 inventory
+
+[ Admin Privileges ]
+  - Admin users can add or delete products & categories
+  - Admin users can view stats about the store from Dashboard
+
+[ My Cart ]
+- Upon confirming their order, users are brought to a summary page where all details of order are present
+- Users can now complete their purchase through Stripe
+
+[ Information ]
+- added an 'About Us' page, accessible from the nav bar
+
+## Bugs Squashed:
+[ Money Formatting ]
+- format pricing to be consistent throughout app, with $ added on all pages
+
+[ Admin Security ]
+- add HTTP Basic Auth to admin pages
+
+[ Empty Cart ]
+- When cart becomes empty, a friendly reminder to continue shopping appears
+
+## Testing:
+Jungle was tested with the following:
+- RSpec [unit testing]
+- Capybara & Poltergeist [integration testing]
+
+
+
 ## Additional Steps for Apple M1 Machines
 
 1. Make sure that you are runnning Ruby 2.6.6 (`ruby -v`)
