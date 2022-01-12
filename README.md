@@ -23,6 +23,8 @@ This is a project from Lighthouse Labs, designed to teach students how to naviga
 [ Information ]
 - added an 'About Us' page, accessible from the nav bar
 
+![gif of basic features](https://github.com/taylornoj/jungle-rails/blob/master/docs/ezgif.com-gif-maker%20(9).gif?raw=true)
+
 ## Bugs Squashed:
 [ Money Formatting ]
 - format pricing to be consistent throughout app, with $ added on all pages
